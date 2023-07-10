@@ -1,3 +1,4 @@
+import 'package:attendance_system/pages/input_check_function.dart';
 import 'package:flutter/material.dart';
 
 class AttendancePages extends StatefulWidget {
@@ -8,12 +9,15 @@ class AttendancePages extends StatefulWidget {
 }
 
 class _AttendancePagesState extends State<AttendancePages> {
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Text("Check in/out"),
+    return MaterialApp(
+      title: 'Attendance System',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
       ),
+      home: AttendancePage(),
     );
   }
 }

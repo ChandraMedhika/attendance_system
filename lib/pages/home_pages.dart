@@ -67,7 +67,7 @@ class _HomePagesState extends State<HomePages> {
                     child: GestureDetector(
                   onTap: () {
                     setState(() {
-                      currentIndex = 1;
+                      currentIndex = i;
                     });
                   },
                   child: Container(
